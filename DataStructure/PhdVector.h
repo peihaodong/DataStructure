@@ -254,7 +254,10 @@ int PhdVector<T>::size() const
 template <typename T>
 int PhdVector<T>::max_size() const 
 {
-	return m_nCapacity;
+	return INT_MAX;
+	return int(((unsigned int)(~0)) >> 1);//最大值就是符号位为0，其他位都为1的整数
+	//~0把所有位变为1，转换乘无符号数，确保右移是逻辑右移（还是其他名字？:)），
+	//也就是高位会因为右移空出个0，这样就作出一个最高位（符号位）为0其他位都为1的整数了
 }
 
 //	获取数组大小

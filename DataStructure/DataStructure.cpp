@@ -4,6 +4,8 @@
 #include <iostream>
 #include <vector>
 #include <assert.h>
+#include <list>
+#include <deque>
 
 class CTest
 {
@@ -22,25 +24,21 @@ private:
 
 int main()
 {
-	std::vector<int> vecInt1, vecInt2;
-	vecInt1.push_back(1);
-	vecInt1.push_back(2);
-	vecInt2.push_back(1);
-	vecInt2.push_back(2);
-	vecInt2.push_back(3);
-	vecInt2.push_back(4);
+	
+	std::vector<int> dequeInt;
+	int nCapacity = dequeInt.max_size();
 
-	int nCapacity1 = vecInt1.capacity();
-	int nCapacity2 = vecInt2.capacity();
-	auto a1 = vecInt1.data();
-	auto a2 = vecInt2.data();
+	dequeInt.push_back(1);
+	nCapacity = dequeInt.max_size();
 
-	vecInt1.swap(vecInt2);
+	dequeInt.push_back(1);
+	nCapacity = dequeInt.max_size();
 
-	nCapacity1 = vecInt1.capacity();
-	nCapacity2 = vecInt2.capacity();
-	a1 = vecInt1.data();
-	a2 = vecInt2.data();
+// 	dequeInt.push_front(1);
+// 	nCapacity = dequeInt.max_size();
+// 
+// 	dequeInt.push_front(1);
+// 	nCapacity = dequeInt.max_size();
 
 	return 0;
 }

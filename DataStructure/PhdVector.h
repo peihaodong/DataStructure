@@ -8,7 +8,7 @@ public:
 	//typedef unsigned int     size_t;
 	//typedef size_t size_type;
 
-	explicit PhdVector();	//构造函数
+	PhdVector();	//构造函数
 	PhdVector(const PhdVector<T>& obj);	//拷贝构造函数
 	~PhdVector();						//析构函数
 	
@@ -25,7 +25,7 @@ public:
 	operator T*();
 	operator const T*();
 
-	T& at(int nPosIndex);				//访问指定的元素，同时进行越界检查
+	T& at(int nPosIndex);			//访问指定的元素，同时进行越界检查
 	const T& at(int nPosIndex) const;
 	T& front();						//访问第一个元素
 	const T& front() const;			
@@ -65,7 +65,7 @@ PhdVector<T>::PhdVector()
 	,m_nSize(0)
 {
 	m_pList = new T[m_nCapacity];		//创建该大小的内存
-	assert(m_pList)
+	assert(m_pList);
 	std::memset(m_pList,0, m_nCapacity);	//初始化该内存为0
 }
 

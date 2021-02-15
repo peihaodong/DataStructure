@@ -16,6 +16,15 @@
     <Filter Include="动态数组">
       <UniqueIdentifier>{4c9e669a-cd4c-4c22-aa75-0428bdc89a03}</UniqueIdentifier>
     </Filter>
+    <Filter Include="双向链表">
+      <UniqueIdentifier>{b331aea8-c081-4456-988c-47c76d281fc6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="栈">
+      <UniqueIdentifier>{ed0d627c-a5e2-4098-be5d-9baf8538015d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="队列">
+      <UniqueIdentifier>{93cc3920-48fe-4fe1-bc39-dea6ef5b0bad}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="DataStructure.cpp">
@@ -25,6 +34,15 @@
   <ItemGroup>
     <ClInclude Include="PhdVector.h">
       <Filter>动态数组</Filter>
+    </ClInclude>
+    <ClInclude Include="PhdList.h">
+      <Filter>双向链表</Filter>
+    </ClInclude>
+    <ClInclude Include="PhdStack.h">
+      <Filter>栈</Filter>
+    </ClInclude>
+    <ClInclude Include="PhdQueue.h">
+      <Filter>队列</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

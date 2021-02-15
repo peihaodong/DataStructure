@@ -154,6 +154,9 @@
     <ClCompile Include="DataStructure.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="PhdList.h" />
+    <ClInclude Include="PhdQueue.h" />
+    <ClInclude Include="PhdStack.h" />
     <ClInclude Include="PhdVector.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

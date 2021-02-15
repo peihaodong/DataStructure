@@ -7,38 +7,16 @@
 #include <list>
 #include <deque>
 
-class CTest
-{
-public:
-	CTest(int nValue) {
-		m_nValue = nValue;
-	}
 
-	int& Value() {
-		return m_nValue;
-	}
-
-private:
-	int m_nValue;
-};
 
 int main()
 {
-	
-	std::vector<int> dequeInt;
-	int nCapacity = dequeInt.max_size();
-
-	dequeInt.push_back(1);
-	nCapacity = dequeInt.max_size();
-
-	dequeInt.push_back(1);
-	nCapacity = dequeInt.max_size();
-
-// 	dequeInt.push_front(1);
-// 	nCapacity = dequeInt.max_size();
-// 
-// 	dequeInt.push_front(1);
-// 	nCapacity = dequeInt.max_size();
+	std::list<int> listInt;
+	listInt.push_back(1);
+	listInt.push_back(2);
+	std::list<int> listInt2 = listInt;
+	auto a = listInt2.size();
+	std::cout << a << std::endl;
 
 	return 0;
 }
